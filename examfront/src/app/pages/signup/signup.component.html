@@ -1,0 +1,51 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 offset-md-3 text-center">
+        <div class="container text-center">
+          <img src="../../../assets/book-logo.jpg" alt=""/>
+        </div>
+        <h1 class="text-center"> Register Here !!</h1>
+        <form (ngSubmit)="formSubmit()">
+          <!-- Username field -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Username*" [(ngModel)]="user.username" name="username">
+          </mat-form-field>
+<!-- User Password -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password*" [(ngModel)]="user.password" name="password">
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name*" [(ngModel)]="user.firstName" name="firstName">
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name*" [(ngModel)]="user.lastName" name="lastName">
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email*" [(ngModel)]="user.email" name="email">
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input type="number" matInput placeholder="Phone Number" [(ngModel)]="user.phone" name="phone">
+          </mat-form-field>
+
+          <div class="container">
+            <button type="submit" mat-raised-button color="primary">Primary</button>
+            <button type="reset" mat-raised-button color="accent">Clear</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
